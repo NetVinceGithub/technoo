@@ -21,6 +21,7 @@ export default function ProjectDetailsModal({ project, onClose }) {
             <p className="text-sm text-white/48">Deployment information</p>
             <div className="mt-3 space-y-3 text-sm text-white/72">
               <div className="flex justify-between"><span>Owner</span><span>{project.owner}</span></div>
+              <div className="flex justify-between"><span>Market</span><span>{project.country}</span></div>
               <div className="flex justify-between"><span>Status</span><Badge>{project.status}</Badge></div>
               <div className="flex justify-between"><span>Progress</span><span>{project.progress}%</span></div>
             </div>

@@ -1,6 +1,6 @@
 import BarChart from "../../components/charts/BarChart.jsx";
 import LineChart from "../../components/charts/LineChart.jsx";
-import { clientTraffic, revenueTrend } from "../../data/mockAnalytics.js";
+import { clientAudienceCountries, clientTraffic, revenueTrend } from "../../data/mockAnalytics.js";
 
 export default function ClientAnalytics() {
   return (
@@ -14,6 +14,11 @@ export default function ClientAnalytics() {
         <h2 className="font-semibold text-white">Revenue visualization</h2>
         <p className="mb-4 text-sm text-white/45">Invoice collection trend</p>
         <BarChart items={revenueTrend.slice(-6).map((value, index) => ({ label: `M${index + 1}`, value }))} />
+      </div>
+      <div className="glass rounded-2xl p-4 xl:col-span-2">
+        <h2 className="font-semibold text-white">Audience geography</h2>
+        <p className="mb-4 text-sm text-white/45">Where this client's website visitors come from</p>
+        <BarChart items={clientAudienceCountries} />
       </div>
     </div>
   );

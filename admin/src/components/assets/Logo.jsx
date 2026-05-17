@@ -20,7 +20,6 @@ export default function Logo({ compact = false }) {
       {!compact && (
         <div>
           <div className="text-xl font-semibold tracking-[0.28em] text-white">ZYLO</div>
-          <div className="text-xs text-white/45">Client command center</div>
         </div>
       )}
     </motion.div>

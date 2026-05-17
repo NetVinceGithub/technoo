@@ -10,7 +10,7 @@ export default function ProjectTable({ projects, onAction }) {
         <table className="min-w-full divide-y divide-white/8 text-left text-sm">
           <thead className="bg-white/[0.03] text-white/42">
             <tr>
-              {["Website", "Link", "Visits", "Deadline", "Amount", "Status", "Deployment", "Created", "Actions"].map((head) => (
+              {["Website", "Link", "Market", "Visits", "Deadline", "Amount", "Status", "Deployment", "Created", "Actions"].map((head) => (
                 <th key={head} className="px-4 py-3 font-medium">{head}</th>
               ))}
             </tr>
@@ -20,6 +20,10 @@ export default function ProjectTable({ projects, onAction }) {
               <tr key={project.id} className={project.status === "Blocked" ? "bg-coral/[0.04] text-white/45" : "text-white/72"}>
                 <td className="px-4 py-3 font-medium text-white">{project.name}</td>
                 <td className="px-4 py-3">{project.link}</td>
+                <td className="px-4 py-3">
+                  <div>{project.country}</div>
+                  <div className="text-xs text-white/42">{project.region}</div>
+                </td>
                 <td className="px-4 py-3">{formatNumber(project.visits)}</td>
                 <td className="px-4 py-3">{project.deadline}</td>
                 <td className="px-4 py-3">{formatCurrency(project.amount)}</td>

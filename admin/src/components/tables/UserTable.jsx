@@ -10,7 +10,7 @@ export default function UserTable({ users, onAction }) {
         <table className="min-w-full divide-y divide-white/8 text-left text-sm">
           <thead className="bg-white/[0.03] text-white/42">
             <tr>
-              {["User", "Role", "Status", "Projects", "Revenue", "Actions"].map((head) => (
+              {["User", "Location", "Role", "Status", "Projects", "Revenue", "Actions"].map((head) => (
                 <th key={head} className="px-4 py-3 font-medium">{head}</th>
               ))}
             </tr>
@@ -21,6 +21,10 @@ export default function UserTable({ users, onAction }) {
                 <td className="px-4 py-3">
                   <div className="font-medium text-white">{user.name}</div>
                   <div className="text-xs text-white/42">{user.email}</div>
+                </td>
+                <td className="px-4 py-3">
+                  <div>{user.country}</div>
+                  <div className="text-xs text-white/42">{user.region}</div>
                 </td>
                 <td className="px-4 py-3"><Badge>{user.role}</Badge></td>
                 <td className="px-4 py-3"><Badge>{user.status}</Badge></td>

@@ -68,7 +68,7 @@ export default function Login({ onLogin }) {
       <form onSubmit={submit} className="mt-6 space-y-4">
         <label className="block space-y-2 text-sm text-white/58">
           <span>Email</span>
-          <input value={email} onChange={(event) => setEmail(event.target.value)} placeholder="team@zylo.dev" className="w-full rounded-xl bg-white/[0.05] px-3 py-3 text-white outline-none" />
+          <input value={email} onChange={(event) => setEmail(event.target.value)} placeholder="your.email@gmail.com" className="w-full rounded-xl bg-white/[0.05] px-3 py-3 text-white outline-none" />
         </label>
         <label className="block space-y-2 text-sm text-white/58">
           <span>Password</span>

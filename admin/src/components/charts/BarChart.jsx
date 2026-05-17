@@ -4,7 +4,7 @@ export default function BarChart({ items }) {
   return (
     <div className="flex h-56 items-end gap-3 rounded-2xl bg-white/[0.03] p-4">
       {items.map((item, index) => (
-        <div key={item.label} className="flex flex-1 flex-col items-center gap-3">
+        <div key={item.label} className="flex h-full flex-1 flex-col items-center justify-end gap-3">
           <motion.div
             initial={{ height: 0 }}
             animate={{ height: `${item.value}%` }}

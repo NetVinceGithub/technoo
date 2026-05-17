@@ -11,6 +11,8 @@ export const initialProjects = [
     createdAt: "2026-02-14",
     progress: 74,
     owner: "Mia Santos",
+    country: "United States",
+    region: "North America",
   },
   {
     id: "p-102",
@@ -24,6 +26,8 @@ export const initialProjects = [
     createdAt: "2026-03-08",
     progress: 88,
     owner: "Eli Cruz",
+    country: "United Kingdom",
+    region: "Europe",
   },
   {
     id: "p-103",
@@ -37,6 +41,8 @@ export const initialProjects = [
     createdAt: "2026-01-21",
     progress: 100,
     owner: "Noah Reed",
+    country: "Canada",
+    region: "North America",
   },
   {
     id: "p-104",
@@ -50,6 +56,8 @@ export const initialProjects = [
     createdAt: "2026-04-02",
     progress: 51,
     owner: "Ava Lim",
+    country: "Germany",
+    region: "Europe",
   },
   {
     id: "p-105",
@@ -63,6 +71,8 @@ export const initialProjects = [
     createdAt: "2026-02-28",
     progress: 91,
     owner: "Lena Park",
+    country: "France",
+    region: "Europe",
   },
   {
     id: "p-106",
@@ -76,5 +86,7 @@ export const initialProjects = [
     createdAt: "2026-04-17",
     progress: 100,
     owner: "Owen Hall",
+    country: "United States",
+    region: "North America",
   },
 ];

@@ -6,9 +6,17 @@ export const deviceSplit = [
   { label: "Mobile", value: 39 },
   { label: "Tablet", value: 13 },
 ];
-export const regions = [
-  { label: "North America", value: 41 },
-  { label: "Europe", value: 27 },
-  { label: "Asia Pacific", value: 22 },
-  { label: "LATAM", value: 10 },
+export const adminCountries = [
+  { label: "USA", value: 34 },
+  { label: "UK", value: 24 },
+  { label: "Germany", value: 18 },
+  { label: "Canada", value: 14 },
+  { label: "France", value: 10 },
+];
+export const clientAudienceCountries = [
+  { label: "USA", value: 42 },
+  { label: "UK", value: 26 },
+  { label: "Germany", value: 17 },
+  { label: "Canada", value: 9 },
+  { label: "France", value: 6 },
 ];

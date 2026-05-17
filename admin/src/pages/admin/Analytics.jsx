@@ -1,7 +1,7 @@
 import BarChart from "../../components/charts/BarChart.jsx";
 import DonutChart from "../../components/charts/DonutChart.jsx";
 import LineChart from "../../components/charts/LineChart.jsx";
-import { deviceSplit, regions, userGrowth } from "../../data/mockAnalytics.js";
+import { adminCountries, deviceSplit, userGrowth } from "../../data/mockAnalytics.js";
 
 export default function Analytics() {
   return (
@@ -19,8 +19,9 @@ export default function Analytics() {
       </div>
       <div className="glass rounded-2xl p-4 xl:col-span-2">
         <h2 className="font-semibold text-white">Geographic analytics</h2>
+        <p className="mb-4 text-sm text-white/45">Client distribution across overseas markets</p>
         <div className="mt-4">
-          <BarChart items={regions} />
+          <BarChart items={adminCountries} />
         </div>
       </div>
     </div>

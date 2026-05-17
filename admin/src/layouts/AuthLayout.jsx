@@ -10,9 +10,9 @@ export default function AuthLayout({ children }) {
         <motion.section initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
           <Logo />
           <div className="max-w-xl">
-            <p className="text-sm uppercase tracking-[0.28em] text-cyan">Agency operations suite</p>
+            <p className="text-sm uppercase tracking-[0.28em] text-cyan">LAUNCH OPERATING SYSTEM</p>
             <h1 className="mt-4 text-4xl font-semibold leading-tight text-white md:text-6xl">
-              Premium delivery control for every client launch.
+             Built for precision, speed, and scalable growth.
             </h1>
             <p className="mt-5 max-w-lg text-base leading-7 text-white/58">
               ZYLO turns projects, deployments, billing, and analytics into one calm command center for teams and clients.
