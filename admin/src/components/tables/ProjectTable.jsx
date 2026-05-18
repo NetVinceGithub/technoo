@@ -19,7 +19,16 @@ export default function ProjectTable({ projects, onAction }) {
             {projects.map((project) => (
               <tr key={project.id} className={project.status === "Blocked" ? "bg-coral/[0.04] text-white/45" : "text-white/72"}>
                 <td className="px-4 py-3 font-medium text-white">{project.name}</td>
-                <td className="px-4 py-3">{project.link}</td>
+                <td className="px-4 py-3">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-cyan underline decoration-cyan/30 underline-offset-4 transition hover:text-mint"
+                  >
+                    {project.link.replace("https://", "").replace(/\/$/, "")}
+                  </a>
+                </td>
                 <td className="px-4 py-3">
                   <div>{project.country}</div>
                   <div className="text-xs text-white/42">{project.region}</div>

@@ -1,9 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
 
 const notifications = [
-  "Helix Finance deployment awaiting approval",
-  "3 invoices due this week",
-  "Traffic spike detected on Atlas Mobile",
+  "Admin Portal balance due on Jun 04",
+  "Website starter package marked paid",
+  "Traffic increased on client public website this week",
 ];
 
 export default function NotificationDropdown({ open }) {

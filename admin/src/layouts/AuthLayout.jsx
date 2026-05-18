@@ -24,7 +24,7 @@ export default function AuthLayout({ children }) {
               <span>99.98% uptime</span>
             </div>
             <div className="grid gap-3 sm:grid-cols-3">
-              {["Revenue +18%", "Deployments 12", "Clients 48"].map((item) => (
+              {["Revenue $1.25k", "Deployments 2", "Clients 1"].map((item) => (
                 <div key={item} className="rounded-2xl bg-white/[0.05] p-4 text-sm text-white/72">{item}</div>
               ))}
             </div>

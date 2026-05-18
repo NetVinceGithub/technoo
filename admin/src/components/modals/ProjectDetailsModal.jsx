@@ -13,9 +13,14 @@ export default function ProjectDetailsModal({ project, onClose }) {
               <span className="text-sm text-white/48">Website preview</span>
               <Badge>{project.deployment}</Badge>
             </div>
-            <div className="soft-grid flex h-36 items-center justify-center rounded-xl border border-white/8 text-sm text-white/48">
-              {project.link}
-            </div>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+              className="soft-grid flex h-36 items-center justify-center rounded-xl border border-white/8 text-sm text-cyan transition hover:border-cyan/30 hover:text-mint"
+            >
+              {project.link.replace("https://", "").replace(/\/$/, "")}
+            </a>
           </div>
           <div className="rounded-2xl bg-white/[0.04] p-4">
             <p className="text-sm text-white/48">Deployment information</p>

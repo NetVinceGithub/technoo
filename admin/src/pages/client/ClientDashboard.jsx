@@ -12,9 +12,9 @@ export default function ClientDashboard({ projects }) {
   const metrics = [
     ["Total Websites", projects.length, "Across active retainers", Globe],
     ["Total Visits", formatNumber(visits), "+12.4% this month", TrendingUp],
-    ["Active Projects", projects.filter((project) => project.status !== "Blocked").length, "2 in review", FolderKanban],
-    ["Upcoming Deadlines", 4, "Next due in 7 days", CalendarClock],
-    ["Remaining Balance", formatCurrency(balance), "2 invoices scheduled", CircleDollarSign],
+    ["Active Projects", projects.filter((project) => project.status !== "Blocked").length, "Both websites live", FolderKanban],
+    ["Upcoming Deadlines", 1, "Admin portal balance due", CalendarClock],
+    ["Remaining Balance", formatCurrency(balance), "$300 starter + feature work", CircleDollarSign],
     ["Deployment Status", `${liveCount} Live`, "All systems monitored", Rocket],
   ];
 
@@ -38,10 +38,10 @@ export default function ClientDashboard({ projects }) {
           <h2 className="font-semibold text-white">Activity feed</h2>
           <div className="mt-4 space-y-3">
             {[
-              "Helix Finance moved to staging",
-              "Atlas Mobile crossed 60k visits",
-              "Aurora Commerce invoice sent",
-              "Bloom Health design review completed",
+              "Client website starter package marked live",
+              "Admin portal deployment verified",
+              "$950 admin portal balance scheduled",
+              "Optional analytics support add-on prepared",
             ].map((item) => (
               <div key={item} className="rounded-xl bg-white/[0.04] p-3 text-sm text-white/68">{item}</div>
             ))}
