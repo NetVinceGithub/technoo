@@ -378,7 +378,7 @@ In production, ByteForce can be connected to:
 - Gives clients a premium portal
 - Supports realistic agency pricing
 - Reduces manual status updates
-- Works across desktop and mobile
+- Focused on website project delivery
 - Can scale into a full SaaS product
 - Makes the agency look more professional
 

@@ -1,4 +1,4 @@
-import { Activity, CircleDollarSign, Globe, Rocket, Smartphone, TrendingUp, Users, Wifi } from "lucide-react";
+import { Activity, CircleDollarSign, Globe, PackageCheck, Rocket, TrendingUp, Users, Wifi } from "lucide-react";
 import MetricCard from "../../components/cards/MetricCard.jsx";
 import LineChart from "../../components/charts/LineChart.jsx";
 import { revenueTrend } from "../../data/mockAnalytics.js";
@@ -7,7 +7,7 @@ export default function AdminDashboard() {
   const metrics = [
     ["Total Users", "4", "2 client accounts", Users],
     ["Total Websites", "2", "Client public site and admin portal", Globe],
-    ["Total Mobile Apps", "0", "Web projects only", Smartphone],
+    ["Website Packages", "2", "Starter site and admin portal", PackageCheck],
     ["Total Revenue", "$1,250", "$300 starting offer", CircleDollarSign],
     ["Monthly Revenue", "$1,250", "2 active invoices", TrendingUp],
     ["Pending Payments", "$950", "Admin portal balance", Activity],
